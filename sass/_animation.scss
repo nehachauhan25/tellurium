@@ -1,0 +1,218 @@
+.top-left {
+  position: absolute;
+  height: 74.18vh;
+  // calc(min(74.2vh, 52.76vw));
+  width: 0px;
+  left: calc(min(29.39vh, 20.9vw));
+  top: 0px;
+
+  border: 2px solid rgba(159, 168, 215, 0.1);
+
+  &--small {
+    position: absolute;
+    height: 25%;
+    width: 0px;
+    left: 0;
+    top: 0px;
+    border: 2px solid;
+    border-image-slice: 1;
+    border-image-source: linear-gradient(
+      270deg,
+      rgba(82, 82, 82, 0) -19.35%,
+      rgba(202, 218, 255, 0.7) 100%
+    );
+    animation: move-top 5s infinite;
+  }
+}
+
+.top-right {
+  position: absolute;
+  height: 67.2vh;
+  // calc(min(67.2vh, 47.8vw));
+  width: 0px;
+  right: calc(min(29.39vh, 20.9vw));
+  top: 0px;
+
+  border: 2px solid rgba(159, 168, 215, 0.1);
+
+  &--small {
+    position: relative;
+    height: 23%;
+    width: 0px;
+    right: 0;
+    top: 0px;
+    border: 2px solid;
+    border-image-slice: 1;
+    border-image-source: linear-gradient(
+      270deg,
+      rgba(82, 82, 82, 0) -19.35%,
+      rgba(202, 218, 255, 0.7) 100%
+    );
+    animation: move-top 5s infinite -3s;
+  }
+}
+
+.bottom-left {
+  position: absolute;
+  height: 26vh;
+  // calc(min(25.9vh, 18.4vw));
+  width: 0px;
+  left: 33.33vw;
+  // calc(min(46.66vh,33.33vw));
+  // top: 74.2vh;
+  bottom: 0;
+  // calc(min(74.2vh, 52.76vw));
+  border: 2px solid rgba(74, 84, 136, 0.1);
+
+  &--small {
+    position: relative;
+    height: 70%;
+    width: 0px;
+    left: 0;
+    bottom: 0;
+
+    border: 2px solid;
+    border-image-source: linear-gradient(
+      270deg,
+      rgba(82, 82, 82, 0) -19.35%,
+      rgba(202, 218, 255, 0.7) 100%
+    );
+    border-image-slice: 1;
+    animation: move-top 5s infinite reverse;
+  }
+}
+
+.bottom-right {
+  position: absolute;
+  height: 32.8vh;
+  // calc(min(23.2vw, 32.7vh));
+  width: 0px;
+  right: 39.2vw;
+  // top: calc(min(67.2vh, 47.8vw));
+  bottom: 0px;
+  border: 2px solid rgba(159, 168, 215, 0.1);
+
+  &--small {
+    position: relative;
+    height: 70%;
+    width: 0px;
+    left: 0;
+    bottom: 0;
+
+    border: 2px solid;
+    border-image-source: linear-gradient(
+      270deg,
+      rgba(82, 82, 82, 0) -19.35%,
+      rgba(202, 218, 255, 0.7) 100%
+    );
+    border-image-slice: 1;
+    animation: move-top 5s infinite -5s;
+  }
+}
+
+.bottom-left-h {
+  position: absolute;
+  width: 33.5vw;
+  height: 0px;
+  left: 0;
+  bottom: 25.9vh;
+  // calc(min(25.9vh, 18.4vw));
+  // top: calc(min(74.2vh, 52.76vw));
+  border: 2px solid rgba(159, 168, 215, 0.1);
+
+  &--small {
+    position: absolute;
+    width: 13vw;
+    height: 0px;
+    right: 100%;
+    top: 0;
+    border: 2px solid;
+    border-image-slice: 1;
+    border-image-source: linear-gradient(
+      270deg,
+      rgba(82, 82, 82, 0) -19.35%,
+      rgba(202, 218, 255, 0.7) 100%
+    );
+    animation: move-right 5s infinite;
+  }
+}
+
+.bottom-right-h {
+  position: absolute;
+  width: 39.49vw;
+  height: 0px;
+  right: 0;
+  // top: calc(min(67.2vh, 47.8vw));
+  border: 2px solid rgba(57, 65, 104, 0.1);
+  bottom: 32.7vh;
+  // calc(min(23.2vw, 32.7vh));
+  //  rgba(57, 65, 104, 0.1);
+  // overflow: hidden;
+  &--small {
+    position: absolute;
+    width: 13vw;
+    height: 1px;
+    right: 100%;
+    top: 0;
+    border: 2px solid;
+    border-image-slice: 1;
+    border-image-source: linear-gradient(
+      270deg,
+      rgba(82, 82, 82, 0) -19.35%,
+      rgba(202, 218, 255, 0.7) 100%
+    );
+    animation: move-right 5s infinite -5s;
+  }
+}
+
+.bottom-h {
+  position: absolute;
+  width: 27.15vw;
+  height: 0px;
+  left: 33.37vw;
+  bottom: 20vh;
+  // calc(min(80vh, 56.9vw));
+  border: 2px solid rgba(159, 168, 215, 0.1);
+}
+
+.bottom-v {
+  position: absolute;
+  height: 30.8vh;
+  // calc(min(30.8vh, 21.9vw));
+  // width: 300px;
+  left: 53.55vw;
+  // top: 49.3vh;
+  bottom: 20vh;
+  // calc(min(49.3vh, 35.3vw));
+  border-left: 2px solid rgba(49, 75, 209, 0.2);
+
+  // @media only screen and (max-aspect-ratio: 0.7) {
+  //   display: none;
+  // }
+}
+
+.square {
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  top: 0px;
+  transform: translateX(-50%);
+  background: rgba(159, 168, 215, 0.2);
+}
+
+.bottom {
+  position: absolute;
+  height: 0;
+  width: 100%;
+  top: 100%;
+  left: 0;
+  top: 100vh;
+  //  calc(min(100vh, 71.11vw));
+  border-bottom: 2px solid rgba(49, 75, 209, 0.2);
+}
+
+.tag-line {
+  position: absolute;
+  left: 5vw;
+  top: 40.4vh;
+}

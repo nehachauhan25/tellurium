@@ -1,0 +1,63 @@
+@keyframes move-top {
+  0% {
+    top: 0;
+    height: 25%;
+  }
+  100% {
+    top: 99%;
+    height: 1.5%;
+  }
+}
+
+@keyframes move-right {
+  0% {
+    right: 0;
+    width: 20%;
+    // transform: translateX(100%);
+  }
+  50% {
+    right: 30%;
+    width: 40%;
+    // transform: translateX();
+  }
+  100% {
+    right: 100%;
+    width: 0%;
+    transform: translateX(-50%);
+  }
+}
+
+@keyframes animate-2 {
+  0% {
+    stroke-dashoffset: -304;
+  }
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+
+.rect-graph {
+  // opacity: 0;
+  // transition: all 3s;
+  animation: rect-opacity 2.8s forwards;
+}
+@keyframes rect-opacity {
+  0% {
+    opacity: 0;
+  }
+  99% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes animate {
+  0% {
+    stroke-dashoffset: 0;
+  }
+  100% {
+    stroke-dashoffset: 304;
+  }
+}

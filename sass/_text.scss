@@ -1,0 +1,34 @@
+.bottom--v {
+  &__text {
+    // border: 2px solid red;
+    position: relative;
+    font-weight: 600;
+    font-size: calc(8px + 1vw);
+    line-height: 2;
+    color: rgba(255, 255, 255, 1);
+    top: 3.5vh;
+    left: 0.94em;
+    letter-spacing: 1px;
+    @media only screen and (max-aspect-ratio: $max-aspect-ratio) {
+      width: 10ch;
+      // top: 0;
+    }
+  }
+  &__para {
+    // border: 2px solid red;
+    position: absolute;
+    top: 3.5vh;
+    // right: 105%;
+    transform: translateX(-105%);
+    font-weight: 600;
+    font-size: calc(8px + 0.7vw);
+    line-height: 1.6;
+    width: 25ch;
+    @media only screen and (max-aspect-ratio: $max-aspect-ratio) {
+      top: -12vh;
+      transform: translateX(-55%);
+      width: 40ch;
+      text-align: center;
+    }
+  }
+}
